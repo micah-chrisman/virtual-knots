@@ -1,0 +1,19 @@
+\documentclass[12pt]{amsart}
+\usepackage[OT2,OT1]{fontenc} 
+
+\newcommand\cyr
+{
+\renewcommand\rmdefault{wncyr} \renewcommand\sfdefault{wncyss} \renewcommand\encodingdefault{OT2} \normalfont
+\selectfont
+}
+\DeclareTextFontCommand{\textcyr}{\cyr}
+
+
+\newcommand{\Zh}{\hbox{\hspace{-5.8mm} \textcyr{Zh}}} 
+\newcommand{\zh}{\hbox{\hspace{-5.8mm} \textcyr{zh}}} 
+
+
+
+\begin{document}
+$\Zh$, $\zh$
+\end{document}
